@@ -123,7 +123,7 @@ if __name__ == '__main__':
     entries = os.listdir(cwd)[1:]
 
 
-    avg_path_lengths = []
+    director_ids = []
     number_nodes = []
     number_edges = []
     density_iter = []
@@ -165,7 +165,8 @@ if __name__ == '__main__':
     
     print
     iterative_network_statistics = pd.DataFrame(index= range(1,counter+1), data=
-                                                {'num_nodes' : number_nodes,
+                                                {'director_id': director_ids,
+                                                 'num_nodes' : number_nodes,
                                                 'num_edges' : number_edges,
                                                 'density': density_iter})
     print('Network Built')
