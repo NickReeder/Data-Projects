@@ -17,7 +17,7 @@ import os
 # add comments
 
 
-def add_director(network, dir_id, self_loops = False, dni = dni):
+def add_director(network, dir_id, self_loops = False, dni):
   cwd = os.getcwd()
   os.chdir(cwd + '\\' + dir_id)
   cwd = os.getcwd()
@@ -138,7 +138,7 @@ if __name__ == '__main__':
       try:
         counter +=1
         print("Attemping to add director_id:", folder)
-        add_director(imdb_network, folder)
+        add_director(imdb_network, folder, dni)
         os.chdir(cwd)
         print('director added')
         #avg_path_lengths.append(nx.average_shortest_path_length(imdb_network))
