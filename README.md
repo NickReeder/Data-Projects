@@ -20,4 +20,4 @@ This is a collection of some of my work in data science, my primary interests ar
       - Q: LGBTQ
   - Each crew node has the following features
     - Name
-  - 
+  - After network was generated, made visualizations for the graph and answered key research questions
