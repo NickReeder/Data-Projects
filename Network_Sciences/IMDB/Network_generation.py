@@ -17,7 +17,7 @@ import os
 # add comments
 
 
-def add_director(network, dir_id, self_loops = False, dni = []):
+def add_director(network, dir_id, self_loops = False, dni = dni):
   cwd = os.getcwd()
   os.chdir(cwd + '\\' + dir_id)
   cwd = os.getcwd()
